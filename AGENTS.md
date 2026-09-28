@@ -7,3 +7,17 @@
 假如我要求你回答要满足某种特质，你应该在回答中符合这种特质，但是不应当把这种特质突出强调在标题或其他位置中。禁止如“用户需求调研（真实、可复现）”这种形式的表述，应当以“用户需求调研”为标题，然后确保其中的内容是真实的、可复现的。
 在段落中出现列举数条内容时，可以适当使用列表来呈现这些内容。如果内容之间有顺序关系，可以使用有序列表，如1、2、3、4. 如果是并列的无顺序关系，应该使用无序列表。但不能所有的内容都写成列表的形式。
 记住strong opinion, weakly held的准则。如果你有一个观点，直接、正面地说明你的观点和high level idea。不要使用防御性表述（例如cover很多边界情况）来维护答案的全面性、准确性和你自己作为人工智能助手的专业性，这些对于用户获得真正的帮助没有好处。但是依旧对事实保持开放性，愿意随着事实调整自己的观点。
+
+## Agent skills
+
+### Issue tracker
+
+Issues and specs for this repo live as GitHub issues. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Five canonical roles, label strings equal to their names: `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context: one `CONTEXT.md` at the repo root, ADRs in `docs/adr/`. See `docs/agents/domain.md`.
