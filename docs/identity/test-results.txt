@@ -1,0 +1,165 @@
+
+> oh-share-it@0.1.0 test
+> tsx --test src/identity/*.test.ts
+
+TAP version 13
+# Subtest: 成员通过浏览器登录、确认授权和 PKCE 取得对应的稳定账户身份
+ok 1 - 成员通过浏览器登录、确认授权和 PKCE 取得对应的稳定账户身份
+  ---
+  duration_ms: 665.661792
+  type: 'test'
+  ...
+# Subtest: 为 MCP 服务签发的凭证不能用于身份服务
+ok 2 - 为 MCP 服务签发的凭证不能用于身份服务
+  ---
+  duration_ms: 566.147042
+  type: 'test'
+  ...
+# Subtest: 授权请求包含配置以外的权限时明确拒绝
+ok 3 - 授权请求包含配置以外的权限时明确拒绝
+  ---
+  duration_ms: 329.627166
+  type: 'test'
+  ...
+# Subtest: 身份接口拒绝缺失或错误凭证，账户参数不能代替登录身份
+ok 4 - 身份接口拒绝缺失或错误凭证，账户参数不能代替登录身份
+  ---
+  duration_ms: 522.797166
+  type: 'test'
+  ...
+# Subtest: 错误密码返回可识别结果且不建立登录会话
+ok 5 - 错误密码返回可识别结果且不建立登录会话
+  ---
+  duration_ms: 503.182292
+  type: 'test'
+  ...
+# Subtest: 访问令牌过期后不能查询身份
+ok 6 - 访问令牌过期后不能查询身份
+  ---
+  duration_ms: 1660.799291
+  type: 'test'
+  ...
+# Subtest: 撤销客户端授权后同一授权的所有令牌都失效
+ok 7 - 撤销客户端授权后同一授权的所有令牌都失效
+  ---
+  duration_ms: 622.878417
+  type: 'test'
+  ...
+# Subtest: 账户、浏览器会话与有效凭证在服务重启后保持一致
+ok 8 - 账户、浏览器会话与有效凭证在服务重启后保持一致
+  ---
+  duration_ms: 843.83925
+  type: 'test'
+  ...
+# Subtest: 浏览器退出结束登录并撤销该会话的授权，重启不会恢复访问
+ok 9 - 浏览器退出结束登录并撤销该会话的授权，重启不会恢复访问
+  ---
+  duration_ms: 525.250917
+  type: 'test'
+  ...
+# Subtest: 成员可以在浏览器拒绝客户端授权
+ok 10 - 成员可以在浏览器拒绝客户端授权
+  ---
+  duration_ms: 493.379083
+  type: 'test'
+  ...
+# Subtest: 浏览器提交必须属于当前交互并携带防跨站请求凭证
+ok 11 - 浏览器提交必须属于当前交互并携带防跨站请求凭证
+  ---
+  duration_ms: 363.355875
+  type: 'test'
+  ...
+# Subtest: OAuth 拒绝错误服务、无效客户端、未登记回调与缺失 PKCE
+    # Subtest: 错误服务
+    ok 1 - 错误服务
+      ---
+      duration_ms: 1.538167
+      type: 'test'
+      ...
+    # Subtest: 缺失服务
+    ok 2 - 缺失服务
+      ---
+      duration_ms: 0.978291
+      type: 'test'
+      ...
+    # Subtest: 无效客户端
+    ok 3 - 无效客户端
+      ---
+      duration_ms: 1.341125
+      type: 'test'
+      ...
+    # Subtest: 未登记回调
+    ok 4 - 未登记回调
+      ---
+      duration_ms: 1.127208
+      type: 'test'
+      ...
+    # Subtest: 缺失 PKCE
+    ok 5 - 缺失 PKCE
+      ---
+      duration_ms: 0.787042
+      type: 'test'
+      ...
+    1..5
+ok 12 - OAuth 拒绝错误服务、无效客户端、未登记回调与缺失 PKCE
+  ---
+  duration_ms: 339.174667
+  type: 'test'
+  ...
+# Subtest: 授权码要求正确 PKCE 且使用后在重启期间仍不能重放
+ok 13 - 授权码要求正确 PKCE 且使用后在重启期间仍不能重放
+  ---
+  duration_ms: 651.819
+  type: 'test'
+  ...
+# Subtest: 身份服务可以通过独立入口启动并正常关闭
+ok 14 - 身份服务可以通过独立入口启动并正常关闭
+  ---
+  duration_ms: 645.168875
+  type: 'test'
+  ...
+# Subtest: 目标服务正确但缺少身份读取权限的凭证不能查询身份
+ok 15 - 目标服务正确但缺少身份读取权限的凭证不能查询身份
+  ---
+  duration_ms: 531.628333
+  type: 'test'
+  ...
+# Subtest: 同一账户使用不同客户端保持身份，不同账户返回各自身份
+ok 16 - 同一账户使用不同客户端保持身份，不同账户返回各自身份
+  ---
+  duration_ms: 830.863208
+  type: 'test'
+  ...
+# Subtest: 客户端不能撤销另一个客户端的授权
+ok 17 - 客户端不能撤销另一个客户端的授权
+  ---
+  duration_ms: 500.100667
+  type: 'test'
+  ...
+# Subtest: 仅启用当前 OAuth 公开入口，PAR 不能绕过权限范围检查
+ok 18 - 仅启用当前 OAuth 公开入口，PAR 不能绕过权限范围检查
+  ---
+  duration_ms: 581.563125
+  type: 'test'
+  ...
+# Subtest: 令牌交换必须指定资源且不提供额外 UserInfo 读取入口
+ok 19 - 令牌交换必须指定资源且不提供额外 UserInfo 读取入口
+  ---
+  duration_ms: 530.817959
+  type: 'test'
+  ...
+# Subtest: 配置收回客户端的服务范围后已有凭证不能继续访问该服务
+ok 20 - 配置收回客户端的服务范围后已有凭证不能继续访问该服务
+  ---
+  duration_ms: 516.997458
+  type: 'test'
+  ...
+1..20
+# tests 25
+# suites 0
+# pass 25
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 12620.346166

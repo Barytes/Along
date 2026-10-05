@@ -1,1 +1,8 @@
 .agents
+node_modules/
+dist/
+.runtime/
+.identity-data/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal

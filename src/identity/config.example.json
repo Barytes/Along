@@ -1,0 +1,24 @@
+{
+  "issuer": "http://127.0.0.1:8787",
+  "host": "127.0.0.1",
+  "port": 8787,
+  "databasePath": ".identity-data/identity.sqlite",
+  "allowLoopbackHttp": true,
+  "trustProxy": false,
+  "identityResource": "http://127.0.0.1:8787/api",
+  "resources": [
+    { "resource": "http://127.0.0.1:8787/api", "scopes": ["identity:read"] }
+  ],
+  "clients": [
+    {
+      "clientId": "local-acceptance-client",
+      "name": "本地认证验收客户端",
+      "redirectUris": ["http://127.0.0.1:8790/callback"],
+      "resources": ["http://127.0.0.1:8787/api"],
+      "scopes": ["openid", "identity:read"]
+    }
+  ],
+  "accessTokenTtl": 900,
+  "sessionTtl": 28800,
+  "grantTtl": 28800
+}
