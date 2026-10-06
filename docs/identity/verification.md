@@ -1,5 +1,7 @@
 # S01 验收记录
 
+> 本文保留已有身份服务的实现与验收记录。其规格来源属于此前产品阶段；当前产品定义见 [兴趣小组场景与产品定义](../product-design/product-definition.md)，新的产品流程需另行实现和验收。
+
 S01 的独立验收已完成。记录时间为 2026-10-05 19:19（Asia/Shanghai），运行环境为 macOS、arm64、Node.js 22.22.2、npm 10.9.7。范围来自本地 S01 ticket 和 [父规格 #2](https://github.com/Barytes/oh-share-it/issues/2)；S01 的前置依赖为 None。
 
 ## 实现与验证范围

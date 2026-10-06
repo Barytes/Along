@@ -2,7 +2,7 @@
 
 做法来自 [Show HN: A Karpathy-style LLM wiki](https://news.ycombinator.com/item?id=47899844)。作者是 najmuzzaman。帖子介绍的是开源项目 [WUPHF](https://github.com/nex-crm/wuphf) 里的 wiki 层。WUPHF 还想做多个编程 agent 的协作办公室；作者说只用 wiki 时，不必用那间办公室。安装命令是 `npx wuphf@latest`。wiki 跑在本机 `~/.wuphf/wiki/`，可以用 git clone 把内容带走。
 
-痛点记录在 `docs/customer-investigation/pain-points.md` 第 4 条。
+痛点记录在 [此前痛点记录](../archive/2026-10-06-product-direction/docs/customer-investigation/pain-points.md) 第 4 条。
 
 ## 作者的做法
 
